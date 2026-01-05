@@ -1,0 +1,60 @@
+.WeaponCard {
+  background-color: rgba(0, 0, 0, 0.515);
+  border-radius: 20px;
+  color: white;
+
+  width: clamp(150px, 250px, 450px);
+
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  position: relative;
+}
+
+.WeaponImg {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.WeaponSpecs dd, dt {
+  display: inline-block;
+  text-align: right;
+}
+
+.WeaponSpecs {
+  text-align: right;
+  position: absolute;
+  inset: 0;           
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+
+  background: rgba(0,0,0,0.9);
+  border-radius: 12px;
+
+  display: flex;        
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 8px;             
+  padding: 16px;
+
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+
+.WeaponCard:hover {
+  & .WeaponSpecs {
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,26 @@
+.NavLink {
+  padding: 10px 20px;
+  color: black;
+}
+
+.NavLink:hover {
+  background-color: rgba(17, 13, 13, 0.15);
+  transform: translateY(-2px);
+}
+
+.NavLink:hover,
+.Active {
+  border-radius: 20px;
+}
+
+.Active {
+  background-color: rgba(17, 13, 13, 0.7);
+  color: white;
+  box-shadow: 0 4px 12px rgba(17, 13, 13, 0.25);
+  transition: background-color 0.5s ease;
+}
+
+.Active:hover {
+  transform: none;
+  background-color: rgba(17, 13, 13, 0.7);
+}

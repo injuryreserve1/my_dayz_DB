@@ -1,0 +1,41 @@
+.WeaponList {
+  display: flex;
+  max-width: 1500px;
+  gap: clamp(8px, 2vw, 20px); 
+}
+
+@media(min-width: 320px) {
+  .WeaponList {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media(min-width: 768px) {
+  .WeaponList {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .WeaponWrapper {
+    /* flex-grow: 2; */
+    max-width:75%;
+  }
+
+  .FilterWeapon {
+    /* flex-grow: 1; */
+    width:25%
+  }
+}
+
+@media(min-width: 1024px) {
+  .WeaponWrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-rows: repeat(auto-fill, 250px);
+  }
+}
+
+

@@ -1,0 +1,15 @@
+.FilterWeapon {
+  background-color: rgba(0, 0, 0, 0.515);
+  border-radius: 20px;
+  width: clamp(150px, 250px, 300px);
+  color: white;
+  align-items: center;
+}
+
+.Wrapper {
+  padding: 10px;
+}
+
+.Wrapper > * {
+  margin: 10px;
+}

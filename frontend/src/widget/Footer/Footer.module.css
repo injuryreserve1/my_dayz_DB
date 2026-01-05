@@ -1,0 +1,24 @@
+.Footer {
+    color: white;
+    font-size: 40px;
+    background-color: black;
+    height: 300px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Wrapper span {
+    font-size: 12vmin;
+    color: white;
+}
+
+.Wrapper span::after {
+    content: attr(data-text);
+}
+
+.Wrapper span::after {
+  -webkit-text-stroke: 0.01em rgb(255, 255, 255);
+}

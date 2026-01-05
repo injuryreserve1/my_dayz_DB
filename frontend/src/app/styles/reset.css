@@ -1,0 +1,27 @@
+ul,
+li {
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Monda', sans-serif;
+  font-size: 18px;
+}
+
+li {
+  color: initial;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.underlined {
+  text-decoration: underline;
+}

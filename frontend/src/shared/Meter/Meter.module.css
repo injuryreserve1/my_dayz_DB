@@ -1,0 +1,22 @@
+.Meter {
+  width: 100px;
+  /* background: #e5e7eb; */
+}
+
+.Meter.isLow::-webkit-meter-optimum-value,
+.Meter.isLow::-webkit-meter-suboptimum-value,
+.Meter.isLow::-webkit-meter-even-less-good-value {
+  background: #b7c526;
+}
+
+.Meter.isMid::-webkit-meter-optimum-value,
+.Meter.isMid::-webkit-meter-suboptimum-value,
+.Meter.isMid::-webkit-meter-even-less-good-value {
+  background: #156231;
+}
+
+.Meter.isHigh::-webkit-meter-optimum-value,
+.Meter.isHigh::-webkit-meter-suboptimum-value,
+.Meter.isHigh::-webkit-meter-even-less-good-value {
+  background: #931313;
+}
