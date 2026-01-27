@@ -16,7 +16,7 @@ export default (sequelize: any) => {
         rate_of_fire: {type: DataTypes.FLOAT},
         description: {type: DataTypes.TEXT},
     }, {
-        tableName: 'weapons',
+        tableName: 'items',
         timestamps: false,
     })
 

@@ -31,6 +31,8 @@ export default function WeaponList() {
     variables: { limit: 57, filter: filters },
   });
 
+  console.log(data)
+
   useEffect(() => {
     setFilters(prev => {
       let updated: any = {...prev};

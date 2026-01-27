@@ -12,8 +12,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/dayzimages': 'http://localhost:4000',
-      '/graphql': 'http://localhost:4000',
+      '/dayzimages': 'http://backend:4000',
+      '/graphql': 'http://backend:4000',
     },
   },
 });
